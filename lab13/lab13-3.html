@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+    const car = function(make, speed){
+        this.make = make;
+        this.speed = speed;
+    } 
+    car.prototype.accelerate = function(){
+       this.speed += 10;
+       console.log(`${this.make} is going at ${this.speed}`)
+    }
+
+    car.prototype.brake = function(){
+        this.speed -=5;
+        console.log(`${this.make} is going at ${this.speed}`)
+    }
+    
+    const EV = function(make, speed, charge){
+        car.call(this, make, speed)
+        this.charge = charge;
+    }
+    EV.prototype = Object.create(car.prototype);
+
+    EV.prototype.chargeBattery = function( chargeTo){
+        this.charge = chargeTo;
+    }
+    EV.prototype.accelerate = function(){
+        this.speed +=20;
+        this.charge --;
+        console.log (`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge} % ` )
+    }
+
+    EV.prototype.brake = function(){
+        this.speed -=10;
+        console.log (`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge} % ` )
+    }
+    const tesla = new EV('Tesla', 120, 23)
+    tesla.chargeBattery(90)
+    console.log(tesla)
+    tesla.accelerate()
+    tesla.brake()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

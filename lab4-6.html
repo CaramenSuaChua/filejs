@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const neighbours = ['Lao', 'Campuchia', 'Thai Lan'];
+        neighbours.push('Utopia');
+        console.log(neighbours);
+        neighbours.pop();
+        console.log(neighbours);
+        if (neighbours.includes('Germany')) {
+            console.log('Viet Nam is the best world which is people would live');
+        } else {
+            console.log('Probably not a central European country :D ')
+        }
+        neighbours[neighbours.indexOf('Thai Lan')] = 'Republic of Sweden';
+        console.log(neighbours);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.again {
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5em;
+    top: -2em;
+    left: 2em;
+    width: 4em;
+    background-color: black;
+    border: 5px solid white;
+}
+
+.between {
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5em;
+    top: -2em;
+    right: 2em;
+}
+
+.lucky {
+    text-align: center;
+    margin-top: 3em;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    height: 18vh;
+    border-bottom: 7px solid #eee;
+}
+
+.message {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+    margin-top: -5em;
+}
+
+.label-score {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.label-highscore {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.luckynumber {
+    position: absolute;
+    padding: 3rem 0rem;
+    left: 50%;
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: white;
+    width: 4em;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+.guess {
+    /* margin-top: 4em; */
+    width: 2em;
+    height: 1.5em;
+    border: 5px solid white;
+    background-color: black;
+    /* font-size: 2em; */
+}
+
+.guessnumber {
+    font-size: 10em;
+}
+
+.left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-left: 4em;
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
+    margin-top: 11em;
+    margin-left: 10em;
+}
+
+.check {
+    margin-top: 1em;
+    color: black;
+    width: 6em;
+    height: 2em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    color: white;
+}
+
+body {
+    background-color: black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const population = [10, 1441, 645, 1000];
+        const percentages2 = [];
+        const percentages1 = function(population) {
+            // return Math.trunc((population * 100) / 7900);
+            return (population * 100) / 7900;
+        }
+
+        for (let i = 0; i < population.length; i++) {
+            const perc = percentages1(population[i]);
+            percentages2.push(perc);
+        }
+
+        console.log(percentages2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

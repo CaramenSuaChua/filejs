@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const myCountry = {
+            country: 'Finland',
+            capital: 'Helsinki',
+            language: 'finnish',
+            neighbours: ['Norway', 'Sweden', 'Russia'],
+            population: 6,
+
+            describe: function() {
+                console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+            },
+            checkIsLand: function() {
+                this.isIsLand = this.neighbours.length === 0 ? true : false;
+            }
+        };
+        myCountry.describe();
+        myCountry.checkIsLand();
+        console.log(myCountry);
+        console.log(myCountry.isIsLand);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

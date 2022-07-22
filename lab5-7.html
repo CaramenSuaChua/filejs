@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const population = [10, 1441, 645, 1000]
+        const percentages3 = [];
+        const percentageOfWorld1 = function(population) {
+            return (population * 100) / 7900;
+        }
+        let i = 0;
+        while (i < population.length) {
+            const perc = percentageOfWorld1(population[i]);
+            percentages3.push(perc);
+            i++;
+        }
+        console.log(percentages3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

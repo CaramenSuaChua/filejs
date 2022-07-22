@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function percentageOfWorld1(population) {
+            return (population / 7900) * 100;
+        }
+        const percentageOfWorld2 = function(population) {
+            return (population * 100) / 7900;
+        }
+        const percVietnam1 = percentageOfWorld2(7);
+        const percEngland1 = percentageOfWorld2(645);
+        const percChinese1 = percentageOfWorld2(1.441);
+        console.log(percVietnam1, percEngland1, percChinese1);
+        const percVietnam = percentageOfWorld1(7);
+        const percEngland = percentageOfWorld1(645);
+        const percChinese = percentageOfWorld1(1.441);
+        console.log(percVietnam, percEngland, percChinese);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const billMoney = 40;
+        if (billMoney >= 50 & billMoney <= 300) {
+            console.log(`The bill was ${billMoney}, the tip was ${billMoney *.15}, and the total value ${billMoney + billMoney*.15} `);
+        } else {
+            console.log(`The bill was ${billMoney}, the tip was ${billMoney *.2}, and the total value ${billMoney + billMoney*.2} `)
+        }
+
+        //toan tu 3 ngoi 
+        const tip = billMoney >= 50 && billMoney <= 300 ? billMoney * .15 : billMoney * .2;
+        console.log(`The bill was ${billMoney}, the tip was ${tip}, and the total value ${billMoney + tip} `);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

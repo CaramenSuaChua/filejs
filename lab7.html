@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess number lucky</title>
+    <link rel="stylesheet" href="lab7.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <button class="again">Again </button>
+        <p class="between"> Between 1 to 20 </p>
+        <h1 class="lucky"> Guess My Number !</h1>
+        <div class="luckynumber "> ? </div>
+
+    </header>
+    <main>
+        <section class="left ">
+            <input type="number" class="guess guessnumber " />
+            <button class="check">  Check </button>
+        </section>
+
+
+        <section class="right ">
+            <p class="message"> Start guessing ......</p>
+            <p class="label-score"> 💯 Score :<span class="score"> 20 </span></p>
+            <p class="label-highscore"> 🏆 HighScore :
+                <span class="highscore"> 0 </span>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- <script src="lab7.js"></script> -->
+    <script>
+       const btnCheck = document.querySelector('.check'); 
+
+       btnCheck.addEventListener('click', function(){
+            console.log('input')
+       });
+    </script>
+</body>
+
+</html>

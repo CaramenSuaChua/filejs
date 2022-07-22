@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+    class CarCl {
+        constructor(make, speed) {
+            this.make = make;
+            this.speed= speed;
+        }
+
+        accelerate = function(){
+            this.speed +=10;
+            console.log(`${this.make} is going at ${this.speed}`)
+        }
+
+        brake = function(){
+            this.speed -=5;
+            console.log(`${this.make} is going at ${this.speed}`)
+        }
+
+        get SpeedUs (){
+            return this.speed /1.6
+        }
+
+        set SpeedUs (speed){
+            return this.speed = speed *1.6
+        }
+    }
+
+    const bmw = new CarCl ('bmw', 120)
+    console.log(bmw)
+    bmw.accelerate()
+    bmw.SpeedUs=50;
+    console.log(bmw)
+    console.log(bmw.SpeedUs)
+
+    const mercedes = new CarCl ('mercedes', 120)
+    console.log(mercedes)
+    mercedes.accelerate()
+    mercedes.SpeedUs=50;
+    console.log(mercedes)
+    console.log(mercedes.SpeedUs)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

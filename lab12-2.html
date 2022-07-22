@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const calcAverageHumanAge = function(dogAge) {
+            const HumanAge = dogAge.map(age => age <= 2 ? 2 * age : 16 + age * 4.)
+            console.log(HumanAge)
+            const adults = HumanAge.filter(age => age > 18)
+            console.log(adults)
+            const average = adults.reduce((a, age) => a + age, 0) / adults.length
+            console.log(average);
+        };
+        calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+
+        // calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const marks = {
+            fullname: 'Marks',
+            weight: 78,
+            height: 1.69,
+            calc: function(weight, height) {
+                return BMIM = Math.trunc(weight / [(height) ^ 2])
+            },
+        }
+        const johns = {
+            fullname: 'John',
+            weight: 92,
+            height: 1.95,
+            calc: function(weight, height) {
+                return BMIJ = Math.trunc(weight / [(height) ^ 2]);
+            },
+        }
+        marks.calc(78, 1.69);
+        johns.calc(92, 1.95);
+        console.log(marks);
+        console.log(johns);
+        console.log(BMIM, BMIJ)
+        if (BMIM > BMIJ) {
+            console.log(`${marks.fullname} (${BMIM}) is higher than ${johns.fullname} (${BMIJ})`);
+        } else if (BMIM < BMIJ) {
+            console.log(`${johns.fullname} (${BMIJ}) is higher than ${marks.fullname} (${BMIM})`);
+        } else {
+            console.log(' No one win ')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

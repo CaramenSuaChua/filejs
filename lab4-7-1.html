@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+        // const scoreDolphins = calcAverage(44, 23, 71);
+        // const scoreKoalas = calcAverage(65, 54, 49);
+        const scoreDolphins = calcAverage(85, 54, 41);
+        const scoreKoalas = calcAverage(23, 34, 27);
+        console.log(scoreDolphins, scoreKoalas);
+
+        const checkWinner = function(avergaDolphins, averageKoalas) {
+            if (avergaDolphins >= 2 * averageKoalas) {
+                console.log(`Dolphins win the trophy 🏆 (${scoreDolphins} vs ${scoreKoalas})`);
+            } else if (averageKoalas >= 2 * avergaDolphins) {
+                console.log(`Koalas win the trophy 🏆 (${scoreKoalas} vs ${scoreDolphins})`);
+            } else {
+                console.log('No one win 😭');
+            }
+        }
+        checkWinner(scoreDolphins, scoreKoalas);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
